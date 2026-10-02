@@ -1,0 +1,51 @@
+{
+  "split": "test",
+  "precision": 0.7404,
+  "recall": 0.5584,
+  "mAP50": 0.6457,
+  "mAP50_95": 0.4492,
+  "speed_ms": {
+    "preprocess": 0.13,
+    "inference": 2.35,
+    "loss": 0.0,
+    "postprocess": 7.75
+  },
+  "per_class": {
+    "biodegradable": {
+      "precision": 0.8122,
+      "recall": 0.5226,
+      "mAP50": 0.6484,
+      "mAP50_95": 0.3495
+    },
+    "cardboard": {
+      "precision": 0.6767,
+      "recall": 0.4788,
+      "mAP50": 0.5687,
+      "mAP50_95": 0.4357
+    },
+    "glass": {
+      "precision": 0.8092,
+      "recall": 0.6045,
+      "mAP50": 0.6834,
+      "mAP50_95": 0.5098
+    },
+    "metal": {
+      "precision": 0.6789,
+      "recall": 0.5953,
+      "mAP50": 0.6468,
+      "mAP50_95": 0.4329
+    },
+    "paper": {
+      "precision": 0.7828,
+      "recall": 0.5898,
+      "mAP50": 0.6894,
+      "mAP50_95": 0.5367
+    },
+    "plastic": {
+      "precision": 0.6826,
+      "recall": 0.5594,
+      "mAP50": 0.6372,
+      "mAP50_95": 0.4304
+    }
+  }
+}
