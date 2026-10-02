@@ -1,10 +1,10 @@
 # Sorting Lab: which bin does it go in?
 
-A live waste-sorting assistant by **Omir Gebreel Abdallteif** (Computer Vision practical project).
+A live waste-sorting assistant by **Omir Gebreel Abdallteif**.
 
 Hold an item up to the camera. A custom-trained YOLO11n names the material and points to the right recycling bin
 (Organic, Paper & Cardboard, Plastic & Metal, Glass). A second YOLO11n finds text. The app then takes the scene apart into
-items, text and background, and shows the course's edge detection, segmentation and feature extraction next to the deep model.
+items, text and background, and shows classical edge detection, segmentation and feature extraction next to the deep model.
 
 | Model | Test mAP50 | Test mAP50-95 |
 |---|---|---|

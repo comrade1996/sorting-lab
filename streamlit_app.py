@@ -131,14 +131,14 @@ with tab_over:
     st.markdown('<div class="sl-h1">Which bin does it go in?</div>'
                 '<p class="sl-lede">Hold an item up to the camera. A YOLO model trained on 10,464 photos of waste names the material and points '
                 'to the right bin. Then the app takes the scene apart: each object, each piece of text and the background on its own, with '
-                'the edge, segmentation and feature steps from the course shown along the way.</p>', unsafe_allow_html=True)
+                'the edge, segmentation and feature steps shown along the way.</p>', unsafe_allow_html=True)
     classes = {}
     for c, i in CLASS_INFO.items():
         classes.setdefault(i["bin"], []).append(c)
     st.markdown('<div class="sl-bins">' + "".join(
         f'<div class="sl-bin{" dark" if n in DARK_TEXT else ""}" style="background:{b["color"]}"><b>{n}</b><p>{b["hint"]}</p>'
         f'<span>{", ".join(classes[n])}</span></div>' for n, b in BINS.items()) + "</div>", unsafe_allow_html=True)
-    st.caption(f"{AUTHOR}, Computer Vision practical project")
+    st.caption(f"Made by {AUTHOR}")
     st.subheader("What happens to each frame")
     steps = [("Capture", "Webcam, video or photo"), ("Prepare", "Letterbox 416 × 416, tensor [1, 3, 416, 416]"),
              ("Detect", "Waste model finds items; text model finds words"), ("Segment", "Each box seeds GrabCut; Otsu, K-Means, Watershed, SLIC"),
